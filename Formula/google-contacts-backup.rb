@@ -5,21 +5,21 @@
 class GoogleContactsBackup < Formula
   desc "Backup and restore Google Contacts to/from a JSON file"
   homepage "https://github.com/mheap/google-contacts-backup"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.1.0/google-contacts-backup_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "0ac61931e684236db1c4a1991ee82b3ad6b1b42ad7dde9588096d410b0c31a9f"
+      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.2.0/google-contacts-backup_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "e11cf575add6e4b3edca31bc458fd7472b854634665ef0aff9fff49843b23ce1"
 
       def install
         bin.install "google-contacts-backup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.1.0/google-contacts-backup_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "41a067a880bc4ff6c827e579aff5ffe35d4785155e188a108ec09c6a5ca1a308"
+      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.2.0/google-contacts-backup_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "0fe617ad9efcd59241c6a91316424d8788f9181a598295a09dbfcc5ddb244d77"
 
       def install
         bin.install "google-contacts-backup"
@@ -29,15 +29,15 @@ class GoogleContactsBackup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.1.0/google-contacts-backup_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "f22b2c5ee11ed75c36f049361d91b0b937dd6739d2a92c948ca802d5e986b7fa"
+      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.2.0/google-contacts-backup_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "733c19ee20db84f957a83aabd4d8d75bce6df11d785de7e7556947b7bf823b34"
       def install
         bin.install "google-contacts-backup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.1.0/google-contacts-backup_0.1.0_Linux_arm64.tar.gz"
-      sha256 "98935336377cf7271ed7e63b08247659e28117cc1121745dbaf42c7722ae23cc"
+      url "https://github.com/mheap/google-contacts-backup/releases/download/v0.2.0/google-contacts-backup_0.2.0_Linux_arm64.tar.gz"
+      sha256 "6bc16d1287e42356c5ac14640997c10a24255b573925ee304ea47856bf5caa24"
       def install
         bin.install "google-contacts-backup"
       end
