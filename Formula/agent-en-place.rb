@@ -5,21 +5,21 @@
 class AgentEnPlace < Formula
   desc "Build on-demand Docker containers for projects + agentic coding using mise"
   homepage "https://github.com/mheap/agent-en-place"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mheap/agent-en-place/releases/download/v0.2.0/agent-en-place_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "14144a12fc8c826bdbded5ac7efddb5df6a73e37c7f1c7a3c217963d1286620e"
+      url "https://github.com/mheap/agent-en-place/releases/download/v0.3.0/agent-en-place_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "d1f3ec8a2b4dad285d9f4e13c2d599f41ab888199e09702de852b5ee244cae72"
 
       def install
         bin.install "agent-en-place"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mheap/agent-en-place/releases/download/v0.2.0/agent-en-place_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "29b7895798d5f870fb27063906107bca659219480b60ec81d0b47e3a9ea2127e"
+      url "https://github.com/mheap/agent-en-place/releases/download/v0.3.0/agent-en-place_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "6e8cb3cbae6a2f111cb59a4a144d7d0f0c8c9e2c17044db5545a188788993c34"
 
       def install
         bin.install "agent-en-place"
@@ -29,15 +29,15 @@ class AgentEnPlace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mheap/agent-en-place/releases/download/v0.2.0/agent-en-place_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "3d68ef01b2408770a8504402358691d78ccc13b137e974444fc3e7b5cd9a6ce5"
+      url "https://github.com/mheap/agent-en-place/releases/download/v0.3.0/agent-en-place_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "a1b60bf4ca44c174f2c1564563403d823f84908a4a0d28aa6ba9beb7aa5223c2"
       def install
         bin.install "agent-en-place"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mheap/agent-en-place/releases/download/v0.2.0/agent-en-place_0.2.0_Linux_arm64.tar.gz"
-      sha256 "add0c5621f61fbc873d525790ba1632debbcf71bb5551ac29f91259ddf15ed02"
+      url "https://github.com/mheap/agent-en-place/releases/download/v0.3.0/agent-en-place_0.3.0_Linux_arm64.tar.gz"
+      sha256 "3d8e515493cfb273874e4de241d83ab111c6cdef8fd93949c96394ce9de6be60"
       def install
         bin.install "agent-en-place"
       end
