@@ -5,21 +5,21 @@
 class Trace2mermaid < Formula
   desc "CLI for converting OpenTelemetry traces to Mermaid Gantt diagrams"
   homepage "https://github.com/mheap/trace2mermaid"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.0/trace2mermaid_0.1.0_darwin_amd64.tar.gz"
-      sha256 "9c440c7ad698fa84f4b1ee23860cf17d5ba8d9a9f19c3f3a4fd416555b17ce20"
+      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.1/trace2mermaid_0.1.1_darwin_amd64.tar.gz"
+      sha256 "d315520604f2faa9e0d1a47209d338780e9201e471426508dfd684c9786ae4a3"
 
       define_method(:install) do
         bin.install "trace2mermaid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.0/trace2mermaid_0.1.0_darwin_arm64.tar.gz"
-      sha256 "78dd9b44f219d983fffafbd0f05d766af0998aa55db53a3bc41baca393b31646"
+      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.1/trace2mermaid_0.1.1_darwin_arm64.tar.gz"
+      sha256 "9b05995cb927fc4b7b9c45aa0021cb4828ed3ef593c5f25bb37081cf52f41e37"
 
       define_method(:install) do
         bin.install "trace2mermaid"
@@ -29,15 +29,15 @@ class Trace2mermaid < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.0/trace2mermaid_0.1.0_linux_amd64.tar.gz"
-      sha256 "6094aab82dbd83b39e429ea8a42bd8043b5896cbb0e37fe6d7c451022e54244c"
+      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.1/trace2mermaid_0.1.1_linux_amd64.tar.gz"
+      sha256 "b20754597954086834be929467ec3bb67e163de0fe3c24129772d04a810dd10b"
       define_method(:install) do
         bin.install "trace2mermaid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.0/trace2mermaid_0.1.0_linux_arm64.tar.gz"
-      sha256 "abafafa8460decb34b46fb401319f3dfb2d843198154169c9e19a06b4882acdf"
+      url "https://github.com/mheap/trace2mermaid/releases/download/v0.1.1/trace2mermaid_0.1.1_linux_arm64.tar.gz"
+      sha256 "5a8f849676496e9078271e7461c67ef50d0228e881fb4917b487f3781e44fe31"
       define_method(:install) do
         bin.install "trace2mermaid"
       end
